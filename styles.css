@@ -9,3 +9,31 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+header .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+header .container h1{
+    grid-column-start: 1 ;
+    grid-column-end: 2 ;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 100px;
+    display: inline;
+}
+
+header .container ul{
+    grid-column-start: 3 ;
+    grid-column-end: 2;
+    display: flex;
+    list-style-type: none;
+    width : 350px;
+    flex-wrap: wrap;
+    margin-top: 30px; 
+}
+
+header .container ul li{
+    flex: auto;
+}
